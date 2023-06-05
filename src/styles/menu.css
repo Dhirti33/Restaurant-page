@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../image/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+#container{
+    display: grid;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow-y: scroll;
+}
+
+#navBar{
+    background:white;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    box-shadow: 0px 0px 10px 0px black;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.restNameInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+}
+
+.restNameInfo > .img{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 45px;
+}
+
+.img > img{
+    background-size: auto;
+}
+
+.restName{
+    font-style: italic;
+}
+
+.nav{
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.nav button{
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background: none;
+    
+}
+
+.nav button:hover {
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    
+}
+
+#menuContainer{
+    display: flex;
+    flex-direction: column;
+    height: 90% ;
+    margin: 5rem auto;
+    width: 50rem;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.label{
+    margin: 5px auto;
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuCard {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    margin: 2px auto;
+    height: 100%;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menuImg {
+    display: grid;
+    height: 70%;
+    width: auto;
+    justify-content: center;
+    margin: 5px auto;
+    
+}
+
+.menuImg > img {
+    margin: auto;
+    height: 100%;
+    width: 95%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.menuInfo{
+    margin: 1px auto;
+
+}
+
+.menuInfo > .menuName {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menuInfo > .menuPrice {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}

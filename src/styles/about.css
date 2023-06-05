@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(../image/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+
+#container{
+    display: grid;
+    height: 100%;
+    gap: 2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow-y: scroll;
+}
+
+#navBar{
+    background:white;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+    box-shadow: 0px 0px 10px 0px black;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.restNameInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+}
+
+.restNameInfo > .img{
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 45px;
+}
+
+.img > img{
+    background-size: auto;
+}
+
+.restName{
+    font-style: italic;
+}
+
+.nav{
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.nav button{
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background: none;
+    
+}
+
+.nav button:hover {
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid black;
+    
+}
+
+#aboutContainer{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+    margin: 5rem auto;
+    width: 30rem;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.aboutLabel {
+    margin: 2rem;
+    text-align: center;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2) ;
+    font-size: xx-large;
+    color: aliceblue;
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.about {
+    margin: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact > p{
+    text-align: center;
+    font-size: larger;
+    font-weight: 900;
+    margin: 2px auto ;
+    color: aliceblue;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    width: 10rem;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+}    
+
+
